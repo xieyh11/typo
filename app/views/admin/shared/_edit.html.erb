@@ -5,7 +5,7 @@
 
 <% end %>
 
-<% if @article.id && current_user.admin? %>
+<% if @article && @article.id && current_user.admin? %>
   <%= form_tag("/admin/content/merge") do %>
     <h4><%= _("Merge Articles") %></h4>
     <label for="merge_with" style="width:auto;margin:0px 5px 10px 0px">Article ID</label>
